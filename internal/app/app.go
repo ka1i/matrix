@@ -2,10 +2,10 @@ package app
 
 import (
 	"errors"
-	"fmt"
 	"log"
 	"os"
 
+	"github.com/ka1i/matrix/internal/app/graphical"
 	"github.com/ka1i/matrix/internal/pkg/usage"
 	"github.com/ka1i/matrix/pkg/version"
 )
@@ -25,7 +25,7 @@ func GetApp() *app {
 }
 
 func (app *app) processLaunch() error {
-	fmt.Println("process launch")
+	graphical.UserInterface()
 	return nil
 }
 
